@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 22.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Hangman" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 472.3 623.9" style="enable-background:new 0 0 472.3 623.9;" xml:space="preserve">
+<path id="Pole" style="fill:#FFFFFF;stroke:#000000;stroke-width:4;stroke-miterlimit:10;" d="M0,621.9h180 M472.3,2.4H88.4
+	l0.3,619.5l3,0L91.4,5.4h377.9 M217.5,4.9l-2.2-2.1L88.9,133.3l2.2,2.1L217.5,4.9z M368.8,5.4l-0.6,110"/>
+<g id="Dummy">
+	
+		<line id="Body" style="fill:#FFFFFF;stroke:#000000;stroke-width:3;stroke-miterlimit:10;" x1="368.8" y1="494.9" x2="368.8" y2="261.9"/>
+	<g id="Arms">
+		
+			<line id="Left_Arm" style="fill:#FFFFFF;stroke:#000000;stroke-width:3;stroke-miterlimit:10;" x1="369.3" y1="310.6" x2="278.3" y2="389.9"/>
+		
+			<line id="Right_Arm_1_" style="fill:#FFFFFF;stroke:#000000;stroke-width:3;stroke-miterlimit:10;" x1="368.3" y1="310.6" x2="459.3" y2="389.9"/>
+	</g>
+	<g id="Legs">
+		
+			<line id="Left_Leg" style="fill:#FFFFFF;stroke:#000000;stroke-width:3;stroke-miterlimit:10;" x1="278.3" y1="621.9" x2="369.3" y2="494.9"/>
+		
+			<line id="Right_Arm" style="fill:#FFFFFF;stroke:#000000;stroke-width:3;stroke-miterlimit:10;" x1="459.3" y1="621.9" x2="368.3" y2="494.9"/>
+	</g>
+	<g id="Head">
+		<circle style="fill:#FFFFFF;stroke:#000000;stroke-width:3;stroke-miterlimit:10;" cx="369.1" cy="187.5" r="73"/>
+		<polygon style="stroke:#000000;stroke-width:0.5;stroke-miterlimit:10;" points="369.1,180.1 270.6,134.4 340.6,215.9 
+			369.1,200.9 397.6,215.9 467.6,134.4 		"/>
+	</g>
+</g>
+<g id="Pole_1_" style="display:none;">
+	
+		<line style="display:inline;fill:#FFFFFF;stroke:#000000;stroke-width:3;stroke-miterlimit:10;" x1="-4" y1="621.9" x2="176" y2="621.9"/>
+	<polyline style="display:inline;" points="465.3,5.4 87.4,5.4 87.6,621.9 84.6,621.9 84.4,2.4 468.3,2.4 	"/>
+	
+		<rect x="58.4" y="67.6" transform="matrix(0.6956 -0.7184 0.7184 0.6956 -4.2425 128.2291)" style="display:inline;" width="181.7" height="3"/>
+	<line style="display:inline;stroke:#000000;stroke-width:3;stroke-miterlimit:10;" x1="364.8" y1="5.4" x2="364.2" y2="115.4"/>
+</g>
+</svg>

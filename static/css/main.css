@@ -1,0 +1,85 @@
+html, body{
+    height: 100%;
+    width: 100%;
+    background-color: linen;
+}
+
+.uppercase{
+    text-transform: uppercase;
+}
+
+.d-inline-block{
+    display:inline-block
+}
+
+.marginSpace{
+    margin: 2em 1em;
+}
+.centered{
+    margin: 0 auto;
+}
+
+.m-0{
+    margin: 0!important;
+}
+
+.hangman{
+    text-align: center;
+}
+
+.hangman .wordsContainer{
+    border: 1px solid black;
+    width : 50%;
+    max-width: 300px;
+    padding : 5px;
+}
+.hangman .wordsContainer .wordList{
+    padding:0;
+    list-style: none;
+    overflow: auto;
+    max-height: 100px;
+}
+
+.hangman .instructions{
+    font-style: italic;
+    font-size: 18px;
+}
+
+
+.hangman .letter{
+    font-size: 30px;
+    border-bottom: 1px solid black;
+}
+
+
+.hangman .letter:not(:last-child){
+    margin-right: 10px
+}
+
+.hangman .errors{
+   margin: 2em 1em;
+}
+
+.hangman .resultMsg{
+    font-size: 3.5em;
+}
+
+#Hangman{
+    width : 300px;
+    height: 400px;
+}
+
+#Hangman .part{
+    opacity : 0;
+    transform: scale(0.7);
+    transition: all 2s;
+}
+
+#Hangman .part.show{
+    transform: scale(1);
+    opacity:1;
+}
+
+
+
+

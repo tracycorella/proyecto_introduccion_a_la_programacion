@@ -1,0 +1,44 @@
+<div class="hangman centered">
+    <h1 class="uppercase">Juego "ahorcado/hangman"</h1>
+    <div class="centered">
+        <h2 class="uppercase">Instrucciones</h2>
+        <p class="instructions">
+          {{ instructions }}
+        </p>
+    </div>
+    <!-- TODO implement logic to show or hide dummy parts -->
+    <div class="dummy marginSpace">
+        {% include 'dummy.html' %}
+    </div>
+    <!-- TODO display win or lose message when game is over -->
+    <div class="word marginSpace">
+        {% for index in range(game.word|length) %}
+            {% if index in game.letters %}
+                <span class="letter">{{ game.word[index] }}</span>
+            {% else %}
+                <span class="letter">&nbsp;</span>
+            {% endif %}
+        {% endfor %}
+    </div>
+   <form id="gameInput" class="marginSpace" action="/" method="post">
+        <input type="text" name="letter" id="letter" placeholder="Digíte una letra" />
+        <button type="submit">Enviar</button>
+    </form>
+   <!-- Todo show restart game just when game is over -->
+    <button onclick="restartGame()">Volver a jugar</button>
+
+    <!-- Todo display game errors in a list -->
+    <!-- <div class="errors">
+        <ul class="d-inline-block">
+        </div> -->
+    <!-- Todo display played words -->
+    <!--
+     <div class="wordsContainer centered">
+            <h2 class="uppercase"></h2>
+            <ul class="wordList">
+                <li>word</li>
+            </ul>
+        </div>
+    -->
+
+</div>
