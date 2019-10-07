@@ -2,5 +2,5 @@
 
 Proyecto programado utilizado como recurso adicional
 para el curso Introducción a la programación 
-mi update 
-[projecto](https://github.com/LuisPadillaM/introduccion_a_la_programacion_proyecto)
+disponible en el aula virtual 
+[projecto](https://github.com/LuisPadillaM/proyecto_introduccion_a_la_programacion)
