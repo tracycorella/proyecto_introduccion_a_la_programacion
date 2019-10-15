@@ -14,3 +14,13 @@ DISPLAY_MSG = {
 ERRORS = {
     'letter': 'Inserte una entrada valida'
 }
+
+# STUDENT_LIST =  [
+#     {'student' : 'student1', 'score' : 57 },
+#     {'student' : 'student2', 'score' : 90 },
+#     {'student' : 'student3', 'score' : 65 },
+#     {'student' : 'student5', 'score' : 100 },
+#     {'student' : 'student6', 'score' : 20 },
+#     {'student' : 'student4', 'score' : 70 },
+#     {'student' : 'student7', 'score' : 35 },
+# ]

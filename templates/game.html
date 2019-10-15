@@ -1,11 +1,12 @@
 <div class="hangman centered">
-    <h1 class="uppercase">Juego "ahorcado/hangman"</h1>
+    <h1 id="ejemplo" class="uppercase">Juego "ahorcado/hangman"</h1>
     <div class="centered">
         <h2 class="uppercase">Instrucciones</h2>
         <p class="instructions">
           {{ instructions }}
         </p>
     </div>
+<div>{{ game.nombre }}</div>
     <!-- TODO implement logic to show or hide dummy parts -->
     <div class="dummy marginSpace">
         {% include 'dummy.html' %}
@@ -25,7 +26,9 @@
         <button type="submit">Enviar</button>
     </form>
    <!-- Todo show restart game just when game is over -->
-    <button onclick="restartGame()">Volver a jugar</button>
+    {% if false %}
+        <button onclick="restartGame()">Volver a jugar</button>
+    {% endif %}
 
     <!-- Todo display game errors in a list -->
     <!-- <div class="errors">
@@ -39,6 +42,17 @@
                 <li>word</li>
             </ul>
         </div>
+    -->
+    <!-- CODIGO GENERADO EN CLASE EJERCICIO BORRAR
+        <div>
+         <ul class="wordList">
+{#              {% for student in game['student_list'] %}#}
+{#                  {% if student['score'] >= 65 %}#}
+{#                    <li>{{ student['student'] + " " + student['score']|string }}</li>#}
+{#                  {% endif %}#}
+{#              {% endfor %}#}
+         </ul>
+    </div>
     -->
 
 </div>

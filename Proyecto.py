@@ -15,14 +15,17 @@ db_instance = DB(app)
 crud_methods = ['GET', 'POST']
 Word = db_instance.models['word']
 WORD = WordApi.get_word()
+print(WORD)
 
 #Word.add_word(word_here, redirect('/')) add word to db
 
 GAME_DATA = init_game_data(WORD)
 
 
+#url sin ningún parámetro
 @app.route('/', methods=crud_methods)
 def index():
+    print('estoy en home')
     global WORD
     if request.method == 'POST':
         req = request.form
@@ -44,6 +47,7 @@ def index():
 @app.route('/restart', methods=['GET'])
 def restart():
     # TODO make restart functionality
+    print('estoy en restart')
     return redirect('/')
 
 if __name__ == '__main__':

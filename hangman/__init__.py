@@ -3,7 +3,6 @@ import hangman.utils as utils
 
 
 # TODO remember this when we will store word
-
 def init_game_data(word):
     return {
         'errors': [],
@@ -14,5 +13,6 @@ def init_game_data(word):
             'gameOver': utils.game_over,
             'gameLose': utils.game_lose
         },
-        'display': constants.DISPLAY_MSG
+        'display': constants.DISPLAY_MSG,
+        #'student_list': constants.STUDENT_LIST,
     }
