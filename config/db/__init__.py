@@ -8,7 +8,7 @@ class DB:
     # three relative path, four slashes absolute path
     db = SQLAlchemy()
     models = {}
-    connect_string = 'sqlite:////' + basedir + '/hangman.db'
+    connect_string = 'sqlite:///' + basedir + '/hangman.db'
 
     def __init__(self, app):
         app.config['SQLALCHEMY_DATABASE_URI'] = self.connect_string
