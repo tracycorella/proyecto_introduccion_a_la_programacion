@@ -3,7 +3,7 @@
 # Edit at https://www.gitignore.io/?templates=linux,macos,flask,python,windows,intellij+all,visualstudiocode
 
 
-.venv/*
+venv/*
 hangman.db
 
 ### Flask ###

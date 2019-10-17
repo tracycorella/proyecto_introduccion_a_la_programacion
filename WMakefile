@@ -1,0 +1,24 @@
+VENV_BIN_DIR:="venv/Scripts"
+
+REQUIREMENTS_DIR:="requirements"
+REQUIREMENTS_LOCAL:="$(REQUIREMENTS_DIR)/local.txt"
+
+CMD_FROM_VENV:=". $(VENV_BIN_DIR)/activate"
+PYTHON=$(CMD_FROM_VENV) && "python"
+
+define create-venv
+virtualenv venv
+endef
+
+PIP:="$(VENV_BIN_DIR)/pip"
+
+hello:
+	@echo "Hello, World!"
+	
+venv:
+	@$(create-venv)
+	@$(PIP) install -r $(REQUIREMENTS_LOCAL)
+
+
+runlocal: venv
+	@echo $(PYTHON) Proyecto.py
