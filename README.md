@@ -11,24 +11,26 @@ Instalacion
 MAC/Windows/Linux 
 installar virtual env 
 
-´´´ ´pip install virtualenv ´´´ 
+``` pip install virtualenv ```
 
 MAC 
 
-´´´ make runlocal ´´´ 
+``` make runlocal ```
 
 Windows 
 
 Instalar [Chocolatey](http://chocolatey.org/install) 
 
 posteriormente correr
-´´´ make -f WMakefile runlocal ´´´
+``` make -f WMakefile runlocal ```
 
 Otra opcie
 
 Otra opción es correr manualmente los siguientes comandos 
 
+```
 virtualenv venv
 venv/Scripts/pip install -r requirements/local.txt
 venv/Scripts/activate 
 python Proyecto.py
+```
