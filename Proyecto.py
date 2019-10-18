@@ -17,7 +17,6 @@ Word = db_instance.models['word']
 WORD = WordApi.get_word()
 print(WORD)
 
-#Word.add_word(word_here, redirect('/')) add word to db
 
 GAME_DATA = init_game_data(WORD)
 
@@ -35,6 +34,7 @@ def index():
         # handle tries
         input = req['letter']
         print(input)
+        # Word.add_word(input, redirect('/'))
         return redirect('/')
     else:
         GAME_DATA['words'] = Word.get_played_words()
