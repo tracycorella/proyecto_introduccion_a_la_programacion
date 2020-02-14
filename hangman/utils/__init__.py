@@ -1,4 +1,4 @@
-def game_over(tries):
+def game_over():
     # TODO function determine where game was won or lose
     pass
 
