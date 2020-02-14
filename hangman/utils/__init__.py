@@ -1,9 +1,6 @@
-import hangman.config.constants as constants
-
-
 def game_over(tries):
-    return tries + 'ejemplo'
     # TODO function determine where game was won or lose
+    pass
 
 
 def game_lose():

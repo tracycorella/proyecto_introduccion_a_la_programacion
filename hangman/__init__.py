@@ -14,5 +14,4 @@ def init_game_data(word):
             'gameLose': utils.game_lose
         },
         'display': constants.DISPLAY_MSG,
-        #'student_list': constants.STUDENT_LIST,
     }
