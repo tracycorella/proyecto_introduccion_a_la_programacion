@@ -28,13 +28,29 @@ def index():
     global WORD
     if request.method == 'POST':
         req = request.form
-        # TODO handle game logic functionality different
-        # handle different scenarios
-        # handle errors
-        # handle tries
         input = req['letter']
         print(input)
-        # Word.add_word(input, redirect('/'))
+        Word.add_word(input, redirect('/'))
+        listaLetras = ['']
+        if not utils.game_lose(GAME_DATA['tries']):
+            if validations.valid_letter(input):
+
+                for i in range(len(listaLetras)):
+                    for j in range(len(WORD)):
+                        if listaLetras[i] == WORD[j]:
+                            if WORD[j] not in listaLetras:
+                                listaLetras.append(input) #agrega una letra solo si solo si esa letra no esta ya en la lista
+
+                if len(listaLetras) == len(WORD): #si el tamano de la lista y de la palabra son iguales, significa que ganó
+                    restart()
+                    return utils.game_won()
+
+                if input not in WORD:
+                    GAME_DATA['tries'] = GAME_DATA['tries'] + 1
+                if GAME_DATA['tries'] == 7:
+                    restart()
+                    return utils.game_lose()
+
         return redirect('/')
     else:
         GAME_DATA['words'] = Word.get_played_words()

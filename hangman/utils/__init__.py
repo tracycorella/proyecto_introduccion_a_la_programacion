@@ -1,11 +1,15 @@
-def game_over():
+def game_over(n):
     # TODO function determine where game was won or lose
-    pass
+    if n ==7:
+        return True
+    return False
 
 
 def game_lose():
     # TODO fill function to determine not guessed word in all tries
-    pass
+    if n ==7:
+        return True
+    return False
 
 
 def game_won():
@@ -13,3 +17,4 @@ def game_won():
     pass
 
 # TODO you should add and implemented other functions as well if necessary
+
